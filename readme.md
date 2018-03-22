@@ -30,11 +30,18 @@ docker run -d -it -p 9200:9200 -p 9300:9300 elasticsearch
 
 It is recommended to check if it is accessible at http://localhost:9200. After the Logstash is running, we can check the messages stored at http://localhost:9200/logs/_search.
 
+![Elastichsearch result](images/search-elastic.png)
+
 ### MongoDB
 
 ```{bash}
 docker run -d -it -p 27017:27017 mongo:3.4
 ```
+
+After the Logstash is running, we can check the messages stored at the `test_logs` collection, within the `logs` database.
+
+![MongDB result](images/search-mongo.png)
+
 
 ## Log Collector
 
